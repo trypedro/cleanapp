@@ -14,6 +14,7 @@
 		CE9A6F4C296CEDE2000E5F7E /* Data.h in Headers */ = {isa = PBXBuildFile; fileRef = CE9A6F40296CEDE1000E5F7E /* Data.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE9A6F54296CEE0C000E5F7E /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9A6F2C296CEB5A000E5F7E /* Domain.framework */; };
 		CE9A6F55296CEE0D000E5F7E /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE9A6F2C296CEB5A000E5F7E /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE9A6F5A296D0B62000E5F7E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A6F59296D0B62000E5F7E /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		CE9A6F40296CEDE1000E5F7E /* Data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
 		CE9A6F45296CEDE2000E5F7E /* DataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9A6F4A296CEDE2000E5F7E /* RemoteAddAccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddAccountTests.swift; sourceTree = "<group>"; };
+		CE9A6F59296D0B62000E5F7E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 			children = (
 				CE9A6F35296CEC1C000E5F7E /* AddAccount.swift */,
 				CE9A6F37296CED45000E5F7E /* AccountModel.swift */,
+				CE9A6F59296D0B62000E5F7E /* Model.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE9A6F5A296D0B62000E5F7E /* Model.swift in Sources */,
 				CE9A6F36296CEC1C000E5F7E /* AddAccount.swift in Sources */,
 				CE9A6F38296CED45000E5F7E /* AccountModel.swift in Sources */,
 			);
