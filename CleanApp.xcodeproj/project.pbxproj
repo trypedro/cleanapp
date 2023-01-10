@@ -10,7 +10,7 @@
 		CE9A6F36296CEC1C000E5F7E /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A6F35296CEC1C000E5F7E /* AddAccount.swift */; };
 		CE9A6F38296CED45000E5F7E /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A6F37296CED45000E5F7E /* AccountModel.swift */; };
 		CE9A6F46296CEDE2000E5F7E /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9A6F3E296CEDE1000E5F7E /* Data.framework */; };
-		CE9A6F4B296CEDE2000E5F7E /* DataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A6F4A296CEDE2000E5F7E /* DataTests.swift */; };
+		CE9A6F4B296CEDE2000E5F7E /* RemoteAddAccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A6F4A296CEDE2000E5F7E /* RemoteAddAccountTests.swift */; };
 		CE9A6F4C296CEDE2000E5F7E /* Data.h in Headers */ = {isa = PBXBuildFile; fileRef = CE9A6F40296CEDE1000E5F7E /* Data.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE9A6F54296CEE0C000E5F7E /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9A6F2C296CEB5A000E5F7E /* Domain.framework */; };
 		CE9A6F55296CEE0D000E5F7E /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE9A6F2C296CEB5A000E5F7E /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -55,7 +55,7 @@
 		CE9A6F3E296CEDE1000E5F7E /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9A6F40296CEDE1000E5F7E /* Data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
 		CE9A6F45296CEDE2000E5F7E /* DataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE9A6F4A296CEDE2000E5F7E /* DataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTests.swift; sourceTree = "<group>"; };
+		CE9A6F4A296CEDE2000E5F7E /* RemoteAddAccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddAccountTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +134,7 @@
 		CE9A6F49296CEDE2000E5F7E /* DataTests */ = {
 			isa = PBXGroup;
 			children = (
-				CE9A6F4A296CEDE2000E5F7E /* DataTests.swift */,
+				CE9A6F4A296CEDE2000E5F7E /* RemoteAddAccountTests.swift */,
 			);
 			path = DataTests;
 			sourceTree = "<group>";
@@ -345,7 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE9A6F4B296CEDE2000E5F7E /* DataTests.swift in Sources */,
+				CE9A6F4B296CEDE2000E5F7E /* RemoteAddAccountTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
