@@ -31,7 +31,7 @@ class AlamofireAdapterTests: XCTestCase {
 
     func test_should_make_request_with_no_data(){
         let sut = makeSut()
-        sut.post(to: makeUr, with: nil)
+        sut.post(to: makeUrl(), with: nil)
         let exp = expectation(description: "waiting")
         UrlProtocolStub.obeserverRequest { request in
             XCTAssertNil(request.httpBodyStream)
