@@ -30,6 +30,7 @@
 		CE9A6F99296D6839000E5F7E /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A6F70296D23D9000E5F7E /* TestExtensions.swift */; };
 		CE9A6F9A296D683E000E5F7E /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A6F72296D244F000E5F7E /* TestFactories.swift */; };
 		CE9A6F9D296D68F7000E5F7E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CE9A6F9C296D68F7000E5F7E /* Alamofire */; };
+		CEB6A070297D30FE0090E8B3 /* AlamofireAdaptar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB6A06F297D30FE0090E8B3 /* AlamofireAdaptar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		CE9A6F7F296D66B7000E5F7E /* Infra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Infra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9A6F86296D66B8000E5F7E /* InfraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9A6F8B296D66B8000E5F7E /* AlamofireAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapterTests.swift; sourceTree = "<group>"; };
+		CEB6A06F297D30FE0090E8B3 /* AlamofireAdaptar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdaptar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,6 +306,7 @@
 		CE9A6F80296D66B7000E5F7E /* Infra */ = {
 			isa = PBXGroup;
 			children = (
+				CEB6A071297D31650090E8B3 /* Http */,
 			);
 			path = Infra;
 			sourceTree = "<group>";
@@ -314,6 +317,14 @@
 				CE9A6F8B296D66B8000E5F7E /* AlamofireAdapterTests.swift */,
 			);
 			path = InfraTests;
+			sourceTree = "<group>";
+		};
+		CEB6A071297D31650090E8B3 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				CEB6A06F297D30FE0090E8B3 /* AlamofireAdaptar.swift */,
+			);
+			path = Http;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -483,6 +494,7 @@
 					};
 					CE9A6F7E296D66B7000E5F7E = {
 						CreatedOnToolsVersion = 13.4;
+						LastSwiftMigration = 1340;
 					};
 					CE9A6F85296D66B8000E5F7E = {
 						CreatedOnToolsVersion = 13.4;
@@ -606,6 +618,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEB6A070297D30FE0090E8B3 /* AlamofireAdaptar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -982,6 +995,7 @@
 		CE9A6F8F296D66B8000E5F7E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1004,6 +1018,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1013,6 +1028,7 @@
 		CE9A6F90296D66B8000E5F7E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1044,6 +1060,7 @@
 		CE9A6F92296D66B8000E5F7E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1060,6 +1077,7 @@
 		CE9A6F93296D66B8000E5F7E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
