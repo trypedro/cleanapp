@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE3F899929AD3857003BE78F /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F899829AD3857003BE78F /* SignUpPresenter.swift */; };
+		CE3F899E29AD392E003BE78F /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F899D29AD392E003BE78F /* AlertView.swift */; };
 		CE9A6F36296CEC1C000E5F7E /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A6F35296CEC1C000E5F7E /* AddAccount.swift */; };
 		CE9A6F38296CED45000E5F7E /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A6F37296CED45000E5F7E /* AccountModel.swift */; };
 		CE9A6F46296CEDE2000E5F7E /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9A6F3E296CEDE1000E5F7E /* Data.framework */; };
@@ -39,6 +41,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CE3F899A29AD3888003BE78F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE9A6F0E296CEA7E000E5F7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE9A6F2B296CEB5A000E5F7E;
+			remoteInfo = Domain;
+		};
 		CE9A6F47296CEDE2000E5F7E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CE9A6F0E296CEA7E000E5F7E /* Project object */;
@@ -123,6 +132,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CE3F899829AD3857003BE78F /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		CE3F899D29AD392E003BE78F /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		CE9A6F16296CEA7F000E5F7E /* CleanApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9A6F2C296CEB5A000E5F7E /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9A6F35296CEC1C000E5F7E /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
@@ -226,6 +237,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE3F899C29AD3916003BE78F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE3F899D29AD392E003BE78F /* AlertView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE3F899F29AD3955003BE78F /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				CE3F899829AD3857003BE78F /* SignUpPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		CE3F89A029AD3B38003BE78F /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				CEB6A098297D3C7C0090E8B3 /* SignUpPresenterTests.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
 		CE9A6F0D296CEA7E000E5F7E = {
 			isa = PBXGroup;
 			children = (
@@ -415,6 +450,8 @@
 		CEB6A08D297D3C7C0090E8B3 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				CE3F899C29AD3916003BE78F /* Views */,
+				CE3F899F29AD3955003BE78F /* Presenters */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -422,7 +459,7 @@
 		CEB6A097297D3C7C0090E8B3 /* PresentationTests */ = {
 			isa = PBXGroup;
 			children = (
-				CEB6A098297D3C7C0090E8B3 /* SignUpPresenterTests.swift */,
+				CE3F89A029AD3B38003BE78F /* Presenters */,
 			);
 			path = PresentationTests;
 			sourceTree = "<group>";
@@ -607,6 +644,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				CE3F899B29AD3888003BE78F /* PBXTargetDependency */,
 			);
 			name = Presentation;
 			productName = Presentation;
@@ -667,6 +705,7 @@
 					};
 					CEB6A08B297D3C7C0090E8B3 = {
 						CreatedOnToolsVersion = 13.4;
+						LastSwiftMigration = 1340;
 					};
 					CEB6A092297D3C7C0090E8B3 = {
 						CreatedOnToolsVersion = 13.4;
@@ -841,6 +880,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE3F899929AD3857003BE78F /* SignUpPresenter.swift in Sources */,
+				CE3F899E29AD392E003BE78F /* AlertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -855,6 +896,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CE3F899B29AD3888003BE78F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE9A6F2B296CEB5A000E5F7E /* Domain */;
+			targetProxy = CE3F899A29AD3888003BE78F /* PBXContainerItemProxy */;
+		};
 		CE9A6F48296CEDE2000E5F7E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CE9A6F3D296CEDE1000E5F7E /* Data */;
@@ -1366,6 +1412,7 @@
 		CEB6A09C297D3C7C0090E8B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1388,6 +1435,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1397,6 +1445,7 @@
 		CEB6A09D297D3C7C0090E8B3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1428,6 +1477,7 @@
 		CEB6A09F297D3C7C0090E8B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1444,6 +1494,7 @@
 		CEB6A0A0297D3C7C0090E8B3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
