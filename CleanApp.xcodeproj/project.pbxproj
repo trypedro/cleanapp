@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CE3F899929AD3857003BE78F /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F899829AD3857003BE78F /* SignUpPresenter.swift */; };
 		CE3F899E29AD392E003BE78F /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F899D29AD392E003BE78F /* AlertView.swift */; };
+		CE3F89A329AD3DC5003BE78F /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F89A229AD3DC5003BE78F /* EmailValidator.swift */; };
 		CE9A6F36296CEC1C000E5F7E /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A6F35296CEC1C000E5F7E /* AddAccount.swift */; };
 		CE9A6F38296CED45000E5F7E /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A6F37296CED45000E5F7E /* AccountModel.swift */; };
 		CE9A6F46296CEDE2000E5F7E /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9A6F3E296CEDE1000E5F7E /* Data.framework */; };
@@ -134,6 +135,7 @@
 /* Begin PBXFileReference section */
 		CE3F899829AD3857003BE78F /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
 		CE3F899D29AD392E003BE78F /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		CE3F89A229AD3DC5003BE78F /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
 		CE9A6F16296CEA7F000E5F7E /* CleanApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9A6F2C296CEB5A000E5F7E /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9A6F35296CEC1C000E5F7E /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
@@ -259,6 +261,14 @@
 				CEB6A098297D3C7C0090E8B3 /* SignUpPresenterTests.swift */,
 			);
 			path = Presenters;
+			sourceTree = "<group>";
+		};
+		CE3F89A129AD3DB0003BE78F /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				CE3F89A229AD3DC5003BE78F /* EmailValidator.swift */,
+			);
+			path = Validators;
 			sourceTree = "<group>";
 		};
 		CE9A6F0D296CEA7E000E5F7E = {
@@ -450,6 +460,7 @@
 		CEB6A08D297D3C7C0090E8B3 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				CE3F89A129AD3DB0003BE78F /* Validators */,
 				CE3F899C29AD3916003BE78F /* Views */,
 				CE3F899F29AD3955003BE78F /* Presenters */,
 			);
@@ -882,6 +893,7 @@
 			files = (
 				CE3F899929AD3857003BE78F /* SignUpPresenter.swift in Sources */,
 				CE3F899E29AD392E003BE78F /* AlertView.swift in Sources */,
+				CE3F89A329AD3DC5003BE78F /* EmailValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
