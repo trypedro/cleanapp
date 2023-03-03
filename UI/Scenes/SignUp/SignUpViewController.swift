@@ -29,6 +29,7 @@ final class SignUpViewController: UIViewController {
         signUp?(viewModel)
     }
     
+    
 }
 
 extension SignUpViewController: LoadingView {

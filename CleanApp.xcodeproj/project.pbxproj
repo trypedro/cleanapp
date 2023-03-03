@@ -21,6 +21,7 @@
 		84B83E5E29B27987000A2319 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB6A08C297D3C7C0090E8B3 /* Presentation.framework */; };
 		84B83E5F29B27987000A2319 /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEB6A08C297D3C7C0090E8B3 /* Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		84B83E6D29B28499000A2319 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B83E6C29B28499000A2319 /* TestExtensions.swift */; };
+		84B83E7029B28FA3000A2319 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B83E6F29B28FA3000A2319 /* UIViewControllerExtensions.swift */; };
 		CE3F899929AD3857003BE78F /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F899829AD3857003BE78F /* SignUpPresenter.swift */; };
 		CE3F899E29AD392E003BE78F /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F899D29AD392E003BE78F /* AlertView.swift */; };
 		CE3F89A329AD3DC5003BE78F /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F89A229AD3DC5003BE78F /* EmailValidator.swift */; };
@@ -188,6 +189,7 @@
 		84B83E5329B27115000A2319 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		84B83E5B29B276BD000A2319 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		84B83E6C29B28499000A2319 /* TestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtensions.swift; sourceTree = "<group>"; };
+		84B83E6F29B28FA3000A2319 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		CE3F899829AD3857003BE78F /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
 		CE3F899D29AD392E003BE78F /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		CE3F89A229AD3DC5003BE78F /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
@@ -364,6 +366,7 @@
 		84B83E3F29B26D18000A2319 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				84B83E6E29B28F93000A2319 /* Helpers */,
 				84B83E6929B28455000A2319 /* Scenes */,
 			);
 			path = UI;
@@ -415,6 +418,14 @@
 			isa = PBXGroup;
 			children = (
 				84B83E6C29B28499000A2319 /* TestExtensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		84B83E6E29B28F93000A2319 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				84B83E6F29B28FA3000A2319 /* UIViewControllerExtensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1082,6 +1093,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B83E7029B28FA3000A2319 /* UIViewControllerExtensions.swift in Sources */,
 				84B83E5429B27115000A2319 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
