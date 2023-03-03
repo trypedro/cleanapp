@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84B83E2729B26844000A2319 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B83E2629B26844000A2319 /* SignUpViewModel.swift */; };
 		CE3F899929AD3857003BE78F /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F899829AD3857003BE78F /* SignUpPresenter.swift */; };
 		CE3F899E29AD392E003BE78F /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F899D29AD392E003BE78F /* AlertView.swift */; };
 		CE3F89A329AD3DC5003BE78F /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F89A229AD3DC5003BE78F /* EmailValidator.swift */; };
@@ -136,6 +137,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		84B83E2629B26844000A2319 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		CE3F899829AD3857003BE78F /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
 		CE3F899D29AD392E003BE78F /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		CE3F89A229AD3DC5003BE78F /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
@@ -243,6 +245,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84B83E2529B2682D000A2319 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				84B83E2629B26844000A2319 /* SignUpViewModel.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
 		CE3F899C29AD3916003BE78F /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,6 +265,7 @@
 		CE3F899F29AD3955003BE78F /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				84B83E2529B2682D000A2319 /* SignUp */,
 				CE3F899829AD3857003BE78F /* SignUpPresenter.swift */,
 			);
 			path = Presenters;
@@ -898,6 +909,7 @@
 			files = (
 				CE3F899929AD3857003BE78F /* SignUpPresenter.swift in Sources */,
 				CE3F89A729AD5589003BE78F /* LoadingView.swift in Sources */,
+				84B83E2729B26844000A2319 /* SignUpViewModel.swift in Sources */,
 				CE3F899E29AD392E003BE78F /* AlertView.swift in Sources */,
 				CE3F89A329AD3DC5003BE78F /* EmailValidator.swift in Sources */,
 			);
