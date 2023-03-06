@@ -44,8 +44,10 @@
 		84BB874229B6848300FF0835 /* UI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84B83E3E29B26D18000A2319 /* UI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		84BB874529B6848300FF0835 /* Validation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B83E7829B2929F000A2319 /* Validation.framework */; };
 		84BB874629B6848300FF0835 /* Validation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84B83E7829B2929F000A2319 /* Validation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		84BB874C29B684E300FF0835 /* SignUpFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB874B29B684E300FF0835 /* SignUpFactory.swift */; };
+		84BB874C29B684E300FF0835 /* ControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB874B29B684E300FF0835 /* ControllerFactory.swift */; };
 		84BB874D29B6892400FF0835 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B83E5B29B276BD000A2319 /* SignUp.storyboard */; };
+		84BB875129B6A85300FF0835 /* UseCasesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB875029B6A85300FF0835 /* UseCasesFactory.swift */; };
+		84BB875429B6A8D400FF0835 /* SignUpCompose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB875329B6A8D400FF0835 /* SignUpCompose.swift */; };
 		CE3F899929AD3857003BE78F /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F899829AD3857003BE78F /* SignUpPresenter.swift */; };
 		CE3F899E29AD392E003BE78F /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F899D29AD392E003BE78F /* AlertView.swift */; };
 		CE3F89A329AD3DC5003BE78F /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F89A229AD3DC5003BE78F /* EmailValidator.swift */; };
@@ -324,7 +326,9 @@
 		84B83EA829B2971A000A2319 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84B83EAD29B2971B000A2319 /* MainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B83EB729B2971C000A2319 /* MainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MainUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		84BB874B29B684E300FF0835 /* SignUpFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFactory.swift; sourceTree = "<group>"; };
+		84BB874B29B684E300FF0835 /* ControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFactory.swift; sourceTree = "<group>"; };
+		84BB875029B6A85300FF0835 /* UseCasesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCasesFactory.swift; sourceTree = "<group>"; };
+		84BB875329B6A8D400FF0835 /* SignUpCompose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCompose.swift; sourceTree = "<group>"; };
 		CE3F899829AD3857003BE78F /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
 		CE3F899D29AD392E003BE78F /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		CE3F89A229AD3DC5003BE78F /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
@@ -628,6 +632,7 @@
 		84B83E9929B29718000A2319 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				84BB875229B6A8C600FF0835 /* Composers */,
 				84BB874A29B684D400FF0835 /* Factories */,
 				84B83E9A29B29718000A2319 /* AppDelegate.swift */,
 				84B83E9C29B29718000A2319 /* SceneDelegate.swift */,
@@ -648,9 +653,18 @@
 		84BB874A29B684D400FF0835 /* Factories */ = {
 			isa = PBXGroup;
 			children = (
-				84BB874B29B684E300FF0835 /* SignUpFactory.swift */,
+				84BB874B29B684E300FF0835 /* ControllerFactory.swift */,
+				84BB875029B6A85300FF0835 /* UseCasesFactory.swift */,
 			);
 			path = Factories;
+			sourceTree = "<group>";
+		};
+		84BB875229B6A8C600FF0835 /* Composers */ = {
+			isa = PBXGroup;
+			children = (
+				84BB875329B6A8D400FF0835 /* SignUpCompose.swift */,
+			);
+			path = Composers;
 			sourceTree = "<group>";
 		};
 		CE3F899C29AD3916003BE78F /* Views */ = {
@@ -1529,8 +1543,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84BB875129B6A85300FF0835 /* UseCasesFactory.swift in Sources */,
 				84B83E9B29B29718000A2319 /* AppDelegate.swift in Sources */,
-				84BB874C29B684E300FF0835 /* SignUpFactory.swift in Sources */,
+				84BB874C29B684E300FF0835 /* ControllerFactory.swift in Sources */,
+				84BB875429B6A8D400FF0835 /* SignUpCompose.swift in Sources */,
 				84B83E9D29B29718000A2319 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

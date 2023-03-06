@@ -9,7 +9,7 @@ class AddAccountIntegrationTests: XCTestCase {
         let alamofireAdapter = AlamofireAdaptar()
         let url = URL(string: "https://fordevs.herokuapp.com/api/signup")!
         let sut = RemoteAddAccount(url: url, httpClient: alamofireAdapter)
-        let addAccountModel = AddAccountModel(name: "Pedro Ivo", email: "pedroivodefaria@gmail.com", password: "secret", passwordConfirmation: "secret")
+        let addAccountModel = AddAccountModel(name: "Pedro Ivo", email: "\(UUID().uuidString)@gmail.com", password: "secret", passwordConfirmation: "secret")
         let exp = expectation(description: "waiting")
         sut.add(addAccountModel: addAccountModel) { result in
             switch result {
