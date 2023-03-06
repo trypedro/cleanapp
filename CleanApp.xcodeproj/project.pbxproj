@@ -51,6 +51,7 @@
 		84BB875829B6AADE00FF0835 /* AddAccountSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B83E3229B26AF6000A2319 /* AddAccountSpy.swift */; };
 		84BB875929B6AB0A00FF0835 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A6F70296D23D9000E5F7E /* TestExtensions.swift */; };
 		84BB875C29B6ADCA00FF0835 /* WeakVarProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB875B29B6ADCA00FF0835 /* WeakVarProxy.swift */; };
+		84BB876129B6B11600FF0835 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB876029B6B11600FF0835 /* Environment.swift */; };
 		CE3F899929AD3857003BE78F /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F899829AD3857003BE78F /* SignUpPresenter.swift */; };
 		CE3F899E29AD392E003BE78F /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F899D29AD392E003BE78F /* AlertView.swift */; };
 		CE3F89A329AD3DC5003BE78F /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F89A229AD3DC5003BE78F /* EmailValidator.swift */; };
@@ -325,6 +326,9 @@
 		84BB875329B6A8D400FF0835 /* SignUpCompose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCompose.swift; sourceTree = "<group>"; };
 		84BB875529B6A9F400FF0835 /* SignUpIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpIntegrationTests.swift; sourceTree = "<group>"; };
 		84BB875B29B6ADCA00FF0835 /* WeakVarProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakVarProxy.swift; sourceTree = "<group>"; };
+		84BB875D29B6B06800FF0835 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		84BB875F29B6B0C000FF0835 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		84BB876029B6B11600FF0835 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		CE3F899829AD3857003BE78F /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
 		CE3F899D29AD392E003BE78F /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		CE3F89A229AD3DC5003BE78F /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
@@ -621,6 +625,7 @@
 		84B83E9929B29718000A2319 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				84BB875E29B6B06E00FF0835 /* Env */,
 				84BB875A29B6ADBB00FF0835 /* Proxies */,
 				84BB875229B6A8C600FF0835 /* Composers */,
 				84BB874A29B684D400FF0835 /* Factories */,
@@ -663,6 +668,16 @@
 				84BB875B29B6ADCA00FF0835 /* WeakVarProxy.swift */,
 			);
 			path = Proxies;
+			sourceTree = "<group>";
+		};
+		84BB875E29B6B06E00FF0835 /* Env */ = {
+			isa = PBXGroup;
+			children = (
+				84BB876029B6B11600FF0835 /* Environment.swift */,
+				84BB875D29B6B06800FF0835 /* Debug.xcconfig */,
+				84BB875F29B6B0C000FF0835 /* Release.xcconfig */,
+			);
+			path = Env;
 			sourceTree = "<group>";
 		};
 		CE3F899C29AD3916003BE78F /* Views */ = {
@@ -1513,6 +1528,7 @@
 			files = (
 				84BB875129B6A85300FF0835 /* UseCasesFactory.swift in Sources */,
 				84B83E9B29B29718000A2319 /* AppDelegate.swift in Sources */,
+				84BB876129B6B11600FF0835 /* Environment.swift in Sources */,
 				84BB875429B6A8D400FF0835 /* SignUpCompose.swift in Sources */,
 				84BB875C29B6ADCA00FF0835 /* WeakVarProxy.swift in Sources */,
 				84B83E9D29B29718000A2319 /* SceneDelegate.swift in Sources */,
@@ -1966,6 +1982,7 @@
 		};
 		84B83EC029B2971D000A2319 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84BB875D29B6B06800FF0835 /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1998,6 +2015,7 @@
 		};
 		84B83EC129B2971D000A2319 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84BB875F29B6B0C000FF0835 /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
