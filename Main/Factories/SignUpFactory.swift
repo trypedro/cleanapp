@@ -7,7 +7,7 @@ import Infra
 
 class SignUpFactory {
     static func makeController() -> SignUpViewController {
-        let controller = SignUpViewController()
+        let controller = SignUpViewController.instantiate()
         let emailValidatorAdapter = EmailValidatorAdapter()
         let url = URL(string: "https://fordevs.herokuapp.com/api/signup")!
         let alamofireAdapter = AlamofireAdaptar()

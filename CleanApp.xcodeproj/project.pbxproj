@@ -45,6 +45,7 @@
 		84BB874529B6848300FF0835 /* Validation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B83E7829B2929F000A2319 /* Validation.framework */; };
 		84BB874629B6848300FF0835 /* Validation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84B83E7829B2929F000A2319 /* Validation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		84BB874C29B684E300FF0835 /* SignUpFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB874B29B684E300FF0835 /* SignUpFactory.swift */; };
+		84BB874D29B6892400FF0835 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B83E5B29B276BD000A2319 /* SignUp.storyboard */; };
 		CE3F899929AD3857003BE78F /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F899829AD3857003BE78F /* SignUpPresenter.swift */; };
 		CE3F899E29AD392E003BE78F /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F899D29AD392E003BE78F /* AlertView.swift */; };
 		CE3F89A329AD3DC5003BE78F /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3F89A229AD3DC5003BE78F /* EmailValidator.swift */; };
@@ -1269,6 +1270,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
@@ -1402,6 +1406,7 @@
 			files = (
 				84B83EA729B2971A000A2319 /* LaunchScreen.storyboard in Resources */,
 				84B83EA429B2971A000A2319 /* Assets.xcassets in Resources */,
+				84BB874D29B6892400FF0835 /* SignUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1996,8 +2001,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Main/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
@@ -2029,8 +2033,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Main/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
